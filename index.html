@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calypso — Trattoria & Enoteca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ───────── TOP BAR ───────── -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brandmark">
+      <span class="dot"></span>
+      Calypso
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn" aria-label="Cerca">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Prenota">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ───────── HERO ───────── -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-wave" viewBox="0 0 400 80" fill="none" preserveAspectRatio="none">
+      <path d="M0 40 Q 50 10, 100 40 T 200 40 T 300 40 T 400 40" stroke="currentColor" stroke-width="0.8" stroke-linecap="round"/>
+      <path d="M0 50 Q 50 20, 100 50 T 200 50 T 300 50 T 400 50" stroke="currentColor" stroke-width="0.6" stroke-linecap="round" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <div class="hero-eyebrow reveal">Trattoria · Enoteca · Est. 1974</div>
+  <h1 class="hero-title" data-text="Calypso"><em>Calypso</em></h1>
+
+  <div class="hero-flourish" aria-hidden="true">
+    <svg viewBox="0 0 200 30" fill="none">
+      <path class="flourish-path" d="M10 15 Q 50 5, 90 15 T 100 15 M 100 15 L 105 10 L 110 20 L 115 10 L 120 15 M 120 15 Q 160 25, 190 15"
+        stroke="currentColor" stroke-width="1" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <p class="hero-tagline reveal">Cucina mediterranea di stagione,<br>ricette della nonna e vini sinceri.</p>
+  <div class="hero-meta reveal">
+    <span><span class="pip"></span>Carta d'autunno</span>
+    <span><span class="pip"></span>Via Maggiore 12</span>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<!-- ───────── CATEGORY NAV ───────── -->
+<nav class="catnav">
+  <div class="catnav-scroll" id="catnav">
+    <a href="#per-iniziare" class="cat-pill active">Per Iniziare</a>
+    <a href="#paste" class="cat-pill">Paste & Risotti</a>
+    <a href="#secondi" class="cat-pill">Secondi</a>
+    <a href="#dolci" class="cat-pill">Dolci</a>
+    <a href="#vini" class="cat-pill">Vini & Cocktail</a>
+  </div>
+</nav>
+
+<!-- ───────── MAIN ───────── -->
+<main>
+
+  <!-- PER INIZIARE -->
+  <section class="section" id="per-iniziare">
+    <div class="section-head">
+      <div class="section-num">— i —</div>
+      <h2 class="section-title">Per Iniziare</h2>
+      <div class="section-sub">Antipasti & Crudi</div>
+      <div class="ornament">
+        <svg viewBox="0 0 60 12" fill="none">
+          <path d="M0 6h22M38 6h22" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="30" cy="6" r="2.5" fill="currentColor"/>
+          <circle cx="26" cy="6" r="0.8" fill="currentColor"/>
+          <circle cx="34" cy="6" r="0.8" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <article class="dish signature">
+      <div class="dish-head">
+        <span class="dish-name">Burrata della Nonna</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">14 €</span>
+      </div>
+      <p class="dish-desc">Burrata cremosa pugliese su pomodorini confit dell'orto, basilico viola e olio extravergine d'oliva della tenuta.</p>
+      <div class="dish-tags">
+        <span class="tag veg">Vegetariano</span>
+        <span class="tag new">Novità</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Vitello Tonnato</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">16 €</span>
+      </div>
+      <p class="dish-desc">Vitello cotto a bassa temperatura, salsa tonnata, capperi di Pantelleria e limone amalfitano.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Carpaccio di Barbabietola</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">12 €</span>
+      </div>
+      <p class="dish-desc">Barbabietole arrostite al sale, ricotta affumicata, nocciole tostate, miele al timo e olio all'arancia.</p>
+      <div class="dish-tags">
+        <span class="tag veg">Vegetariano</span>
+        <span class="tag gf">Senza Glutine</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Polpo alla Brace</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">18 €</span>
+      </div>
+      <p class="dish-desc">Polpo alla brace, crema di patate al tartufo, paprika affumicata e olio al prezzemolo.</p>
+      <div class="dish-tags">
+        <span class="tag spicy">Leggermente piccante</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- PASTE & RISOTTI -->
+  <section class="section" id="paste">
+    <div class="section-head">
+      <div class="section-num">— ii —</div>
+      <h2 class="section-title">Paste & Risotti</h2>
+      <div class="section-sub">Fatte in casa ogni mattina</div>
+      <div class="ornament">
+        <svg viewBox="0 0 60 12" fill="none">
+          <path d="M0 6h22M38 6h22" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="30" cy="6" r="2.5" fill="currentColor"/>
+          <circle cx="26" cy="6" r="0.8" fill="currentColor"/>
+          <circle cx="34" cy="6" r="0.8" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <article class="dish signature">
+      <div class="dish-head">
+        <span class="dish-name">Cacio e Pepe</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">15 €</span>
+      </div>
+      <p class="dish-desc">Tonnarelli artigianali, pecorino romano DOP di 24 mesi e pepe nero Sarawak macinato al momento. Tre ingredienti, trent'anni di mestiere.</p>
+      <div class="dish-pairing">Abbinamento: Frascati Superiore</div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Ravioli di Zucca</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">17 €</span>
+      </div>
+      <p class="dish-desc">Pasta fresca ripiena di zucca mantovana, burro nocciola, salvia fritta e amaretti sbriciolati.</p>
+      <div class="dish-tags">
+        <span class="tag veg">Vegetariano</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Risotto al Tartufo</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">26 €</span>
+      </div>
+      <p class="dish-desc">Riso Carnaroli, fondo di parmigiano, burro di Normandia e tartufo nero di Norcia lamellato al tavolo.</p>
+      <div class="dish-tags">
+        <span class="tag veg">Vegetariano</span>
+        <span class="tag gf">Senza Glutine</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Spaghetti alle Vongole</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">19 €</span>
+      </div>
+      <p class="dish-desc">Spaghetti al dente, vongole veraci, aglio dorato, vino bianco, prezzemolo e peperoncino calabrese.</p>
+      <div class="dish-tags">
+        <span class="tag spicy">Piccante</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Lasagna della Casa</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">16 €</span>
+      </div>
+      <p class="dish-desc">La ricetta originale della nonna: ragù bolognese cotto sette ore, besciamella e parmigiano reggiano di 36 mesi.</p>
+    </article>
+  </section>
+
+  <!-- PROMO -->
+  <div class="promo">
+    <div class="promo-blob promo-blob-1"></div>
+    <div class="promo-blob promo-blob-2"></div>
+    <div class="promo-eyebrow">— Menù Degustazione —</div>
+    <h3 class="promo-title">"La Tavola della Nonna"</h3>
+    <p class="promo-text">Sette portate selezionate dallo chef. Antipasto, due paste, secondo, formaggi, dolce e caffè.</p>
+    <div class="promo-price">68 €<small>/ a persona</small></div>
+  </div>
+
+  <!-- SECONDI -->
+  <section class="section" id="secondi">
+    <div class="section-head">
+      <div class="section-num">— iii —</div>
+      <h2 class="section-title">Secondi</h2>
+      <div class="section-sub">Carni & Pesci</div>
+      <div class="ornament">
+        <svg viewBox="0 0 60 12" fill="none">
+          <path d="M0 6h22M38 6h22" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="30" cy="6" r="2.5" fill="currentColor"/>
+          <circle cx="26" cy="6" r="0.8" fill="currentColor"/>
+          <circle cx="34" cy="6" r="0.8" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Ossobuco alla Milanese</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">28 €</span>
+      </div>
+      <p class="dish-desc">Stinco di vitello brasato sei ore al vino bianco, gremolata al limone e polenta cremosa al parmigiano.</p>
+      <div class="dish-pairing">Abbinamento: Barolo 2018</div>
+    </article>
+
+    <article class="dish signature">
+      <div class="dish-head">
+        <span class="dish-name">Bistecca alla Fiorentina</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">12 €/100g</span>
+      </div>
+      <p class="dish-desc">Costata di Chianina frollata 45 giorni alla brace di legna. Servita con sale Maldon, olio e rucola selvatica. Minimo 800g.</p>
+      <div class="dish-tags">
+        <span class="tag gf">Senza Glutine</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Branzino al Sale</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">29 €</span>
+      </div>
+      <p class="dish-desc">Branzino selvaggio in crosta di sale alle erbe, aperto al tavolo. Verdure di stagione e olio al finocchietto selvatico.</p>
+      <div class="dish-tags">
+        <span class="tag gf">Senza Glutine</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Pollo al Mattone</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">22 €</span>
+      </div>
+      <p class="dish-desc">Mezzo pollo ruspante marinato al limone e rosmarino, schiacciato sotto mattone caldo. Patate confit nel suo fondo.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Parmigiana di Melanzane</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">17 €</span>
+      </div>
+      <p class="dish-desc">Strati di melanzane, pomodoro San Marzano, mozzarella di bufala e basilico. Cotta al forno in tegame di terracotta.</p>
+      <div class="dish-tags">
+        <span class="tag veg">Vegetariano</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- DOLCI -->
+  <section class="section" id="dolci">
+    <div class="section-head">
+      <div class="section-num">— iv —</div>
+      <h2 class="section-title">Dolci</h2>
+      <div class="section-sub">Dolci della casa</div>
+      <div class="ornament">
+        <svg viewBox="0 0 60 12" fill="none">
+          <path d="M0 6h22M38 6h22" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="30" cy="6" r="2.5" fill="currentColor"/>
+          <circle cx="26" cy="6" r="0.8" fill="currentColor"/>
+          <circle cx="34" cy="6" r="0.8" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <article class="dish signature">
+      <div class="dish-head">
+        <span class="dish-name">Tiramisù Classico</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">9 €</span>
+      </div>
+      <p class="dish-desc">Mascarpone montato a mano, savoiardi inzuppati nell'espresso napoletano, cacao Valrhona e un tocco di Marsala.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Panna Cotta ai Fichi</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">8 €</span>
+      </div>
+      <p class="dish-desc">Crema cotta alla vaniglia del Madagascar, composta di fichi neri al Pedro Ximénez e crumble di mandorle.</p>
+      <div class="dish-tags">
+        <span class="tag gf">Senza Glutine</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Gelato Artigianale</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">7 €</span>
+      </div>
+      <p class="dish-desc">Tre gusti a scelta: pistacchio di Bronte, stracciatella, frutti di bosco, nocciola piemontese o limone siciliano.</p>
+      <div class="dish-tags">
+        <span class="tag veg">Vegetariano</span>
+      </div>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Cannoli Siciliani</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">8 €</span>
+      </div>
+      <p class="dish-desc">Cialde croccanti riempite al momento con ricotta di pecora, pistacchi, arancia candita e cioccolato fondente 70%.</p>
+    </article>
+  </section>
+
+  <!-- VINI -->
+  <section class="section" id="vini">
+    <div class="section-head">
+      <div class="section-num">— v —</div>
+      <h2 class="section-title">Vini & Cocktail</h2>
+      <div class="section-sub">Selezione della casa</div>
+      <div class="ornament">
+        <svg viewBox="0 0 60 12" fill="none">
+          <path d="M0 6h22M38 6h22" stroke="currentColor" stroke-width="0.8"/>
+          <circle cx="30" cy="6" r="2.5" fill="currentColor"/>
+          <circle cx="26" cy="6" r="0.8" fill="currentColor"/>
+          <circle cx="34" cy="6" r="0.8" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Negroni della Casa</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">11 €</span>
+      </div>
+      <p class="dish-desc">Gin botanico, Campari, vermouth rosso infuso in casa con scorza d'arancia amara e rosmarino dell'orto.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Spritz al Bergamotto</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">9 €</span>
+      </div>
+      <p class="dish-desc">Aperol, prosecco DOC, soda e un tocco di bergamotto calabrese. Servito con oliva taggiasca.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Chianti Classico DOCG</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">7 € / 32 €</span>
+      </div>
+      <p class="dish-desc">Sangiovese di Toscana, affinato in rovere francese. Note di ciliegia matura, viola e cuoio. Calice o bottiglia.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Vermentino di Sardegna</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">6 € / 28 €</span>
+      </div>
+      <p class="dish-desc">Bianco minerale con note di pera, mandorla amara e brezza marina. Perfetto con pesci e crudi.</p>
+    </article>
+
+    <article class="dish">
+      <div class="dish-head">
+        <span class="dish-name">Limoncello della Costiera</span>
+        <span class="dish-leader"></span>
+        <span class="dish-price">5 €</span>
+      </div>
+      <p class="dish-desc">Fatto in casa con limoni di Sorrento macerati 60 giorni. Servito ghiacciato in coppa di cristallo gelata.</p>
+    </article>
+  </section>
+
+</main>
+
+<!-- ───────── FOOTER ───────── -->
+<footer>
+  <div class="foot-mark"><em>Calypso</em></div>
+  <div class="foot-info">
+    Via Maggiore 12 · Centro Storico<br>
+    Prenotazioni: <strong style="color:var(--terracotta)">+39 075 123 4567</strong>
+  </div>
+
+  <div class="foot-hours">
+    <div><strong>Mar — Gio</strong> · 13:00 — 23:00</div>
+    <div><strong>Ven — Sab</strong> · 13:00 — 00:30</div>
+    <div><strong>Dom</strong> · 13:00 — 17:00</div>
+    <div style="opacity:0.6;margin-top:6px;">Lunedì chiuso</div>
+  </div>
+
+  <a href="#" class="foot-cta">
+    Prenota un Tavolo
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+
+  <div class="foot-tiny">— Dal 1974 con amore —</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
